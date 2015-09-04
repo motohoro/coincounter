@@ -1,0 +1,28 @@
+
+*:not(input){
+-webkit-user-select: none;
+}
+
+div.ui-block-a  label{
+font-size:30px;
+width:100%;
+}
+
+div.ui-block-c label{
+font-size:30px;
+float:right;
+text-align:right;
+width:100%;
+}
+div.ui-grid-b{
+border-bottom:#008800 solid 1px;
+}
+
+.sumgrid{
+color:red;
+font-size:50px;
+border-top:#008800 double 1px;
+}
+.sum1{
+float:right;
+}

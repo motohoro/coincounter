@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="question_coin1.png" rel="apple-touch-icon">
+<meta content="yes" name="apple-mobile-web-app-capable">
+
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+<link rel="stylesheet" href="count1.css" />
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="count1.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+<div data-role="header">
+	<h1>金種表</h1>
+	<a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-recycle" name="clearbtn">Clear</a>
+</div><!-- /header -->
+<div role="main" class="ui-content">
+<!--
+印刷連動やデータ送信対応してくれる仕組みになるとさらに簡単になれるかも
+-->
+<div><a href="http://www.ipodwave.com/ipad/howto/keyboard.html" target="_blank">iPad/iPad miniでの文字入力/キーボードの切り替え方法</a>
+</div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="1">1円×</label></div><div class="ui-block-b"><input type="number" name="1" id="1" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="1" id="result1"></label></div></div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="5">5円×</label></div><div class="ui-block-b"><input type="number" name="5" id="5" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="5" id="result5"></label></div></div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="10">10円×</label></div><div class="ui-block-b"><input type="number" name="10" id="10" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="10" id="result10"></label></div></div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="50">50円×</label></div><div class="ui-block-b"><input type="number" name="50" id="50" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="50" id="result50"></label></div></div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="100">100円×</label></div><div class="ui-block-b"><input type="number" name="100" id="100" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="100" id="result100"></label></div></div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="500">500円×</label></div><div class="ui-block-b"><input type="number" name="500" id="500" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="500" id="result500"></label></div></div>
+
+<div class="ui-grid-b sumgrid"><div class="ui-block-a">硬貨計</div><div class="ui-block-b"></div><div class="ui-block-c"><span id="coinsum" class="sum1"></span></div></div>
+
+<div class="ui-grid-b"><div class="ui-block-a"><label for="10000">10000円×</label></div><div class="ui-block-b"><input type="number" name="10000" id="10000" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="10000" id="result10000"></label></div></div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="5000">5000円×</label></div><div class="ui-block-b"><input type="number" name="5000" id="5000" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="5000" id="result5000"></label></div></div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="2000">2000円×</label></div><div class="ui-block-b"><input type="number" name="2000" id="2000" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="2000" id="result2000"></label></div></div>
+<div class="ui-grid-b"><div class="ui-block-a"><label for="1000">1000円×</label></div><div class="ui-block-b"><input type="number" name="1000" id="1000" min="0" data-clear-btn="true"></div><div class="ui-block-c"><label for="1000" id="result1000"></label></div></div>
+
+<div class="ui-grid-b sumgrid"><div class="ui-block-a">紙幣計</div><div class="ui-block-b"></div><div class="ui-block-c"><span id="billsum" class="sum1"></span></div></div>
+
+<div class="ui-grid-b sumgrid"><div class="ui-block-a">合計</div><div class="ui-block-b"></div><div class="ui-block-c"><span id="allsum" class="sum1"></span></div></div>
+</div>
+<div data-role="footer" class="ui-bar">
+<a href="#" data-role="button" data-icon="recycle" name="clearbtn">Clear</a>
+<!-- &copy; 2014 mitsuhiro matsumoto -->
+</div><!-- /footer -->
+</div>
+
+</body>
+</html>
