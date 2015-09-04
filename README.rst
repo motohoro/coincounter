@@ -7,3 +7,4 @@
 
 .. image:: IMGview.png
 
+http://motohoro.github.io/coincounter
